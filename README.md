@@ -1,0 +1,4 @@
+Configurations
+==============
+
+Vim, Awesome, etc
