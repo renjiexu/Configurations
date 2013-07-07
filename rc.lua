@@ -57,9 +57,9 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 layouts =
 {
-    -- awful.layout.suit.floating,
+    --awful.layout.suit.floating,
     -- awful.layout.suit.tile,
-    -- awful.layout.suit.tile.left,
+    awful.layout.suit.tile.left,
     -- awful.layout.suit.tile.bottom,
     -- awful.layout.suit.tile.top,
     -- awful.layout.suit.fair,
@@ -237,7 +237,8 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "w", function () mymainmenu:show({keygrabber=true}) end),
 
 	awful.key({ modkey, "Control" }, "c", function() awful.util.spawn("google-chrome", false, 1) end),
-	-- awful.key({ modkey, "Control" }, "e", function() awful.util.spawn("/home/allblue/eclipse/eclipse", false, 1) end),
+	awful.key({ modkey, "Control" }, "e", function() awful.util.spawn("sh /home/renjie/idea/bin/idea.sh", false, 1) end),
+	awful.key({ modkey, "Control" }, "f", function() awful.util.spawn("nautilus /home/renjie", false, 1) end),
 
 
     -- Layout manipulation
